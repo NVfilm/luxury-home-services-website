@@ -37,7 +37,7 @@ export default function ContactForm() {
 
     try {
       // SEND TO N8N WEBHOOK
-      await fetch('https://nvgrowthhub.app.n8n.cloud/webhook/lead-capture', {
+      await fetch('https://nvgrowthhub.app.n8n.cloud/webhook/<__PLACEHOLDER_VALUE__lead-capture__>', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
