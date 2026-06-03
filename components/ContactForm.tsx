@@ -126,7 +126,6 @@ Full Name </label> <input
     <label className="block text-sm font-semibold text-slate-700 mb-2">
       Service Required
     </label>
-
     <select
       name="service"
       value={formData.service}
@@ -148,7 +147,6 @@ Full Name </label> <input
     <label className="block text-sm font-semibold text-slate-700 mb-2">
       Address
     </label>
-
     <input
       type="text"
       name="address"
@@ -164,7 +162,6 @@ Full Name </label> <input
     <label className="block text-sm font-semibold text-slate-700 mb-2">
       Message
     </label>
-
     <textarea
       name="message"
       value={formData.message}
