@@ -35,7 +35,7 @@ setFormData((prev) => ({
   ...prev,
   [name]: value,
 }));
-```
+
 
 };
 
@@ -43,7 +43,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 e.preventDefault();
 setLoading(true);
 
-```
+
 try {
   await fetch(
     'https://nvgrowthhub.app.n8n.cloud/webhook/lead-capture',
@@ -63,7 +63,6 @@ try {
   );
 
   const whatsappMessage = `Hi SmartCare! I would like to book a service.
-```
 
 Name: ${formData.fullName}
 Phone: ${formData.phone}
@@ -71,7 +70,7 @@ Service Required: ${formData.service}
 Address: ${formData.address}
 Message: ${formData.message}`;
 
-```
+
   const whatsappUrl = `https://wa.me/971525400103?text=${encodeURIComponent(
     whatsappMessage
   )}`;
@@ -91,7 +90,6 @@ Message: ${formData.message}`;
 } finally {
   setLoading(false);
 }
-```
 
 };
 
@@ -106,7 +104,7 @@ Full Name </label> <input
        placeholder="Your name"
      /> </div>
 
-```
+
   <div>
     <label className="block text-sm font-semibold text-slate-700 mb-2">
       Phone Number
@@ -190,7 +188,6 @@ Full Name </label> <input
     )}
   </button>
 </form>
-```
 
 );
 }
