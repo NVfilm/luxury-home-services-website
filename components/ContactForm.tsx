@@ -80,7 +80,4 @@ Message: ${formData.message}`;
     setLoading(false);
   }
 };
-      </button>
-    </form>
-  );
-}
+  
